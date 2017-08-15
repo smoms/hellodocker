@@ -1,4 +1,4 @@
 FROM busybox:latest
-WORKDIR /app
-COPY ["/app/command.ch", "/app"]
-ENTRYPOINT ["./app/command.sh"]
+WORKDIR /
+COPY app/* app/
+CMD /app/command.sh
